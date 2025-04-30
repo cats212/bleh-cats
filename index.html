@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bleh Cats</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fce4ec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      font-size: 4rem;
+      color: #d81b60;
+    }
+    .cat {
+      width: 200px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .cats {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay>
+    <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="container">
+    <h1>Bleh 😛</h1>
+    <div class="cats">
+      <img class="cat" src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cat 1">
+      <img class="cat" src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Cat 2">
+      <img class="cat" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cat 3">
+      <img class="cat" src="https://media.giphy.com/media/l0MYEqEzwMWFCg8rm/giphy.gif" alt="Cat 4">
+    </div>
+  </div>
+</body>
+</html>
